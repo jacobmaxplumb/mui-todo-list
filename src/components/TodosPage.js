@@ -2,6 +2,7 @@ import { Box, Container, CssBaseline, Typography } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Copyright } from "./SignIn";
 import { TodoForm } from "./TodoForm";
+import { TodoList } from "./TodoList";
 
 const defaultTheme = createTheme();
 
@@ -22,6 +23,7 @@ export const TodosPage = () => {
             My Todo List
           </Typography>
           <TodoForm />
+          <TodoList />
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
